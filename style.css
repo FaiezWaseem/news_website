@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header or navbar disign*/
+header{
+
+    background-color: black;
+    color: cornsilk;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+    align-items: center;
+}
+header .web-header{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 652px;
+    max-width: 952px;
+}
+/* logo design*/
+header .web-header img{
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+}
+/*  Page title design  / Company brand name */
+header .web-header h1{
+    margin: auto 0;
+}
+/* Top social  icon links*/
+header .social-icons i{
+    margin:0px 7px;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+/* navbar for li items and marquee */
+.navbar{
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+.navbar .nav{
+    /* nav bar box as flex*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 5px;
+    list-style: none;
+    justify-content: flex-end;
+    text-align: right;
+    
+}
+.navbar .nav li{
+    margin: 0px 10px;
+    /* space between li items*/
+}
+.navbar .nav a{ 
+    /* default color of li items */
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+}
+.navbar .nav a:hover{
+        /* on hover color of li items */
+    padding: 8px;
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    transition: all 0.4s ease-out;
+}
+/*breaking new marquee text */
+.navbar .breaking-news #btext{
+    /* breaking news written text designing*/
+    margin: auto 0;
+
+color: white;
+text-transform: uppercase;
+font-size: 16px;
+width: 200px;
+}
+.navbar .breaking-news{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+padding: 0px 30px 0px 60px;
+}
+.navbar .breaking-news marquee .news{
+    display: inline-block;
+    color: aliceblue;
+    text-decoration: none;
+}
+.navbar .breaking-news marquee .news:hover{
+    color: red;
+}
+
+/*Main Section  start  NEWS & REPORT */
+h2{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    font-weight: 800;
+}
+main{
+    display: flex;
+}
+.popular-news{
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    border: 2px solid grey;
+    padding: 20px;
+    
+}
+
+.popular-news .trend{
+    background-image: url(./image/beach.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;    
+}
+.popular-news .trend p{
+ flex-direction:end;
+    text-transform: uppercase;
+    color: white;
+font-weight: 700;
+background-color:rgba(255, 255, 255, 0.2);
+}
+.popular-news .pop{
+    background-image: url(./image/th.jpg);
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;   
+ 
+}
+.popular-news .pop p{
+   text-transform: uppercase;
+   color: white;
+    font-weight: 700;
+    background-color:rgba(255, 255, 255, 0.2);
+ }
+
+ .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+.item5 { grid-area: footer; }
+
+.grid-container {
+    margin: 20px 3px;
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 010px;
+  background-color: rgba(128,128,128, 0.2);
+  padding: 10px;
+  
+}
+.item1{
+
+  text-align: center; 
+    color:rgb(216, 45, 45);
+     background-image:  url(./image/climber.jpg);
+}
+.item2{
+    background-image:  url(./image/tiktok.jpg);
+    background-repeat: no-repeat;
+    background-size: 300px 400px ;
+    color:white;
+}
+.item3{
+    background-image:  url(./image/cricket.jpg);
+    color:white;  
+    background-size: cover;
+}
+.item5{
+    background-image:  url(./image/wuhan.jpg);
+    color:white;  
+ 
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.grid-container > div {
+   
+  background-color: rgba(255, 255, 255, 0.8);
+
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}/*Main finish*/
+/* news & report section closed*/
+
+/* Entertainment  section*/
+.entertainment{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.entertainment .heading{
+    margin: 20px 20px;
+}
+.entertainment .news{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 5px;
+    width: 320px;
+    height: 320px;
+    background-color: rgba(128, 128,128, .07) ;
+    border: 1px  solid grey;
+ 
+}
+.entertainment .news h3{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.entertainment .news p{
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.entertainment .news .image img{
+    width: 250px;
+    height: 150px;
+}
+#btn{
+    position: absolute;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+#btn #see-more{
+  
+    background-color: transparent;
+    border: solid initial;
+    border-radius: 5px;
+    padding: 5px;
+  
+}
+#btn #see-more:hover{
+     transition: all .6s linear;
+    transform:  scale(1.1);
+}
+/* Over view*/
+.view{
+    margin: 120px 20px 50px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.view .box{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 230px;
+    height: 180px;
+    margin: 10px 10px;
+    overflow: hidden;
+}
+.view .box .sub{
+    display: flex;
+}
+.view .box h3{
+    margin: 10px;
+}
+.view .box .sub p{
+    margin-left: 10px;
+    justify-content: center;
+}
+.view .box .hd::before{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 18px;
+    background-color: royalblue;
+    margin-right: 2px;
+}
+
+/* Footer Copright Section started*/
+.foot{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+.foot .icon{
+    font-size: 30px;
+  margin-left: 50px;
+}
